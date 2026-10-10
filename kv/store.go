@@ -12,3 +12,10 @@ func (s *Store) Get(key string) (string, bool) {
 	v, ok := s.items[key]
 	return v, ok
 }
+
+func (s*Store) Put(key, value string) {
+
+}
+func (s*Store) Delete(key string) {
+
+}
