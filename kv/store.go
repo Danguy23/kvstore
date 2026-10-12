@@ -14,8 +14,8 @@ func (s *Store) Get(key string) (string, bool) {
 }
 
 func (s*Store) Put(key, value string) {
-
+	s.items[key] = value
 }
 func (s*Store) Delete(key string) {
-
+	delete(s.items, key)
 }
