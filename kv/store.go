@@ -13,9 +13,9 @@ func (s *Store) Get(key string) (string, bool) { //retrieves value using key
 	return v, ok
 }
 
-func (s*Store) Put(key, value string) { //adds or updates a key-value pair in the store
+func (s *Store) Put(key, value string) { //adds or updates a key-value pair in the store
 	s.items[key] = value
 }
-func (s*Store) Delete(key string) { //removes a key-value pair from the store
+func (s *Store) Delete(key string) { //removes a key-value pair from the store
 	delete(s.items, key)
 }
